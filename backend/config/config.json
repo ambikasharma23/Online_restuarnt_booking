@@ -1,0 +1,25 @@
+{
+  "development": {
+    "username": "root",
+    "password": "navya@2018",
+    "database": "dining",
+    "host": "localhost",  
+    "dialect": "mysql",
+    "port": 3306,
+    "timezone": "+5:30"
+  },
+  "test": {
+    "username": "root",
+    "password": 8950502091,
+    "database": "test",
+    "host": "localhost",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}

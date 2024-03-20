@@ -1,0 +1,73 @@
+/* BookingDetails.css */
+
+h1 {
+  /* text-decoration: underline; Add underline */
+  margin-top: 25px;
+  background-image: url("https://img.freepik.com/free-vector/orange-yellow-gradient-vector-background_53876-117274.jpg");
+  background-clip: text;
+  color: transparent;
+  text-fill-color: transparent;
+  font-size: 50px;
+  font-weight: bold;
+  font-stretch: expanded;
+  /* text-shadow: 2px 2px 2px black; Add a black border */
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+
+
+.booking-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.booking-box {
+  width: 100%;
+  max-width: 600px;
+  border: 1px solid #ff000060;
+  border-radius: 20px;
+  margin: 20px;
+  padding: 20px;
+  background-color: rgba(255, 128, 0, 0.132);
+  box-shadow: 0 14px 18px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease-in-out;
+  text-align: justify;
+  align-items: center;
+  font-size: 200pxs;
+}
+
+.booking-box:hover {
+  box-shadow: 0 8px 16px rgba(255, 0, 0, 0.6);
+  cursor: none;
+  /* background-color: rgb(255, 121, 80); */
+}
+
+.booking-info {
+  margin-bottom: 10px;
+  font-size: 1.3em;
+  color: rgb(255, 0, 0);
+}
+
+.booking-info p {
+  margin: 0;
+  padding: 5px 0;
+}
+
+.booking-box.expired-booking {
+  width: 600px;
+  max-width: 600px;
+  padding: 20px;
+  margin: 20px;
+  align-items: center;
+  background-color: #aeaeae;
+  box-shadow: none;
+  border: none;
+  pointer-events: none;
+}
+
+.booking-info-exp {
+  margin-bottom: 10px;
+  font-size: 1.3em;
+  color: rgb(71, 70, 70);
+}

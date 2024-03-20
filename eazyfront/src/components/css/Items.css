@@ -1,0 +1,243 @@
+/* styles.css */
+
+body{
+  /* background-color: #ffc795; */
+  background-image: url("https://static.vecteezy.com/system/resources/previews/015/806/668/non_2x/brown-color-background-of-smooth-shapes-transition-from-dark-to-light-skin-color-abstract-modern-backgrond-design-free-vector.jpg");
+  background-size: cover; 
+  background-repeat: no-repeat;
+}
+
+.card {
+  margin-left: auto;
+  margin-right: auto;
+  gap: 10%;
+  width: 20rem;
+  height: 23rem;
+  overflow: hidden;
+  margin: 0px 10px 20px;
+  padding: 20px 20px 20px 20px;
+  /* background-color: #fc732f43; */
+  background-image: url("https://img.freepik.com/free-vector/orange-yellow-gradient-vector-background_53876-117274.jpg");
+  background-size: cover; 
+  background-repeat: no-repeat;
+  /* font-size: 40px; */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: none;
+}
+
+
+.card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.container {
+  text-align: center;
+  /* color: #fff; */
+  gap:10px;
+  margin-top:10px;
+  margin-right: 50px;
+}
+
+.row {
+  display: flex;
+  justify-content:center;
+  margin-bottom: 10px;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.my-3 {
+  color: #ff7d19;
+  text-shadow: none;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  margin-top: 10px;
+  margin-bottom: 3rem;
+  justify-content: center;
+  
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+}
+
+.btn-danger:hover {
+  background-color: #c82333;
+}
+
+
+form {
+  display:flex;
+  /* align-items: center; */
+  /* position:fixed; */
+
+  justify-content: center;
+}
+
+.search-bar {
+  padding: 25px;
+  justify-content: center;
+  align-items: center;
+  /* font-family: 'Courier New', Courier, monospace; */
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.search-bar input {
+  /* padding: 5px; */
+  background-color: #ffeebb;
+  height: 40px;
+  border-radius: 10px;
+  margin-right: 10px;
+  margin-top: 5px;
+  width: 400px;
+  border: 1px solid #000000; 
+}
+
+.search-bar button {
+  border-radius: 10px;
+  /* padding: 5px 10px; */
+  background-color: #ff0400; /* Add styling for the button */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: 5px;
+  height: 40px;
+  margin-right: 20px;
+  position: relative;
+  transition: color 0.3s;
+  border:1px solid black;
+  justify-content: space-between;
+  /* width: 100%; */
+}
+
+.search-bar button:hover {
+  color:transparent;
+  background-color: transparent;
+  border:none;
+}
+
+.search-bar button:hover::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url("https://i.ibb.co/PYtMX9c/search.png") no-repeat;
+  width: 35px; /* Adjust the width of the logo */
+  height: 35px; /* Adjust the height of the logo */
+  background-size: cover;
+}
+
+.search-bar {
+  /* display: block; */
+  margin-top: 20px;
+  justify-content:center;
+  /* align-items: center; */
+  margin-left: 35px;
+  margin-bottom: -10px;
+}
+
+.col-md-3 {
+  margin-top: 20px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  /* padding: auto; */
+  margin-left: 20px;
+  /* gap:20px; */
+  flex-wrap: wrap;
+  align-items: center;
+  
+}
+
+.flex-45 {
+  flex: 0 0 45%;
+}
+
+.flex-25 {
+  flex: 0 0 25%;
+}
+
+
+.btn-primary {
+  background-color: #ff0000; /* Use your primary color */
+  color: #fff; /* Text color */
+  border: none;
+  text-shadow:none;
+}
+
+/* Add hover effect to the "See all" button */
+.btn:hover {
+
+  text-decoration:wavy;
+  background-color: transparent;
+  color: #ff0000 ;
+  /* opacity: 0.8; Adjust the opacity as needed */
+}
+
+.current-page {
+  border-radius: 12px;
+  background-color: blue;
+  color: white;
+}
+
+.other-page {
+  background-color: red;
+  color: white;
+}
+
+.disabled-page {
+  background-color: gray;
+  color: white;
+  /* cursor:a; */
+}
+
+.enabled-page {
+  background-color: red;
+  color: white;
+}
+/* Add this CSS to disable hover effect for disabled buttons */
+.pagination-buttons button:disabled:hover {
+  color: inherit; /* Preserve the original text color */
+  background-color: inherit; /* Preserve the original background color */
+  /* cursor: not-allowed; */
+}
+
+/* Adjust the color and background for the disabled state if needed */
+.pagination-buttons button:disabled {
+  color: transparent ;/* Adjust as needed */
+  background-color: transparent; /* Adjust as needed */
+}
+
+/* Add this CSS to disable the hover effect for the previous button when on the first page */
+.pagination-buttons button:first-child:disabled:hover {
+  color: inherit;
+  background-color: inherit;
+  /* cursor:auto; */
+}
+.pagination-buttons {
+  margin-top: 20px; /* Add some top margin to separate from the cards */
+}
+
+.pagination-buttons button {
+  border-radius: 10px;
+  margin-right: 10px; /* Add some right margin to create space between buttons */
+  padding: 5px 10px; /* Add padding to make buttons more visible and clickable */
+  cursor: pointer; /* Add pointer cursor to indicate interactivity */
+  border: none; /* Remove default button border */
+  background-color: #007bff; /* Add background color */
+  color: #fff; /* Add text color */
+}
+
+
+.pagination-buttons button:hover {
+  box-sizing: border-box;
+  background-color: #ef0c0c;
+}

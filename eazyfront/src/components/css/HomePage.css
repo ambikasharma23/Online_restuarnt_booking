@@ -1,0 +1,213 @@
+/* HomePage.css */
+
+
+
+.content h2 {
+  background-image: url("https://img.freepik.com/free-vector/orange-yellow-gradient-vector-background_53876-117274.jpg");
+  background-clip: text;
+  color: transparent;
+  text-fill-color: transparent;
+  text-shadow: none;
+  /* color: #fff; */
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 35px;
+}
+
+.content h4 {
+  margin-top: 20px;
+  /* padding: 20px; */
+  color: #fb7500;
+  font-size: 25px;
+  text-shadow: none;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+}
+
+
+.home-container {
+  font-family: 'Arial ', sans-serif;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  /* background-image: url('https://img.freepik.com/premium-photo/empty-wood-table-blurred-cafe-light-background-product-display-template-business-presentation_7189-1151.jpg'); */
+  /* filter: blur(200); */
+  /* body { */
+    /* background-color: #ffc088; */
+    /* background-image: url("https://img.freepik.com/free-vector/orange-yellow-gradient-vector-background_53876-117274.jpg"); */
+    background-size: cover; 
+    /* background-repeat: no-repeat; */
+    /* position:fixed; */
+  
+  /* background-color: #ffc795; */
+  background-image: url("https://static.vecteezy.com/system/resources/previews/015/806/668/non_2x/brown-color-background-of-smooth-shapes-transition-from-dark-to-light-skin-color-abstract-modern-backgrond-design-free-vector.jpg");
+  background-size: cover; 
+  background-repeat: no-repeat;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* background-color: #ffc795; Light gray background color */
+  color: #333333; /* Dark text color */
+  height: 100vh;
+  font-family: 'Arial', sans-serif;
+  width: 100%;
+}
+
+
+.search-bar {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+  margin-right: auto;
+  margin-bottom: 20px;
+  /* width:90%; */
+}
+
+
+form {
+  display:flex;
+}
+
+.search-bar input {
+  padding: 5px;
+  height: 25%;
+  border-radius: 10px;
+  margin-right: 10px;
+  margin-top: 5px;
+  width: 350px;
+  border: 1px solid #ccc; /* Add styling for the input field */
+  
+}
+
+.search-bar button {
+  border-radius: 10px;
+  padding: 5px 10px;
+  background-color: #ff6600; /* Add styling for the button */
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  margin-top: 5px;
+  height: 25%;
+  margin-right: 20px;
+  position: relative;
+  transition: color 0.3s;
+  justify-content: space-between;
+  /* width: 100%; */
+}
+
+.search-bar button:hover {
+  color:transparent;
+  background-color: transparent;
+}
+
+.search-bar button:hover::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url("https://i.ibb.co/PYtMX9c/search.png") no-repeat;
+  width: 35px; /* Adjust the width of the logo */
+  height: 35px; /* Adjust the height of the logo */
+  background-size: cover;
+}
+
+
+/* Header styles */
+
+
+/* Content styles */
+.content {
+  font-family: 'Bangers', cursive;
+  color: #ff6600;
+  text-shadow: 4px 4px 6px rgba(0, 0, 0, 0.5);
+  /* text-align: ; */
+  flex: 1;
+  display: flex;
+  flex-direction: column ;
+  align-items: center;
+  /* justify-content: center; */
+}
+
+
+
+/* Meal tabs styles */
+.meal-tabs {
+  display: flex;
+  gap: 12px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  /* margin-bottom: 20px; */
+}
+
+.meal-btn {
+  font-family: 'Pacifico', cursive;
+  font-size: 1.2rem; /* Adjust font size */
+  /* background-image: url("https://img.freepik.com/free-vector/orange-yellow-gradient-vector-background_53876-117274.jpg");
+  background-size: cover; 
+  background-repeat: no-repeat; */
+  background-color: #ff8800; 
+  color: #ffffff; /* White text color */
+  border: none;
+  padding: 15px 30px;
+  max-width: 220px;
+  min-width: 200px;
+  
+  border-radius: 600px; /* Squircle shape */
+  cursor: pointer;
+  transition: background-color 0.1s, transform 0.2s;
+  position: relative;
+}
+
+.meal-btn:hover {
+  background-color:transparent; 
+  /* background-image: none; */
+  transform: scale(1.1); 
+  color: transparent;
+}
+
+.meal-btn:hover::before {
+  content: ''; /* Empty content for the pseudo-element */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url("https://i.ibb.co/HgFRH03/fork.png") no-repeat;
+  width: 50px; /* Adjust the width of the spoon and fork image */
+  height: 50px; /* Adjust the height of the spoon and fork image */
+  background-size: cover;
+}
+
+/****media screenn*/
+@media only screen and (max-width: 900px ) {
+  .header {
+  width: 100%;
+}
+}
+
+.salad {
+  width: 60%; /* Adjust the width of the image container */
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-top: -30px;
+  margin-bottom: -40px;
+  /* padding: ; */
+  /* filter:blur(1px); */
+}
+
+/* card */
+/* HomePage.css or a new CSS file */
+.card-container {
+  margin-top: 5px;
+  margin-bottom: 40px;
+  color: #ff6016;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Adjust as needed */
+  /* padding: 10px 10px 10px 10px; */
+}
+
+/* Add any additional styling for RestaurantCard components if needed */
+
+  

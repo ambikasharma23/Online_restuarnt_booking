@@ -1,0 +1,178 @@
+.header {
+  /* margin-bottom: 18px; */
+  width: 100%;
+  padding: 10px ;
+  
+  /* background-color: rgb(255, 140, 39); Cyan background color */
+  color: #ff4d00; /* White text color */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  background-image: url("https://img.freepik.com/free-vector/orange-yellow-gradient-vector-background_53876-117274.jpg");
+  background-size: cover; 
+  background-repeat: no-repeat;
+  /* box-shadow:rgba(0, 0, 0, 1); */
+  /* shadow */
+  /* font-size: rem; */
+}
+
+
+
+.brand {
+  /* font-family: 'Bangers', cursive; */
+  font-family: 'fantasy';
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0;
+  color:#ffffff;
+  padding: 10px 10px;
+}
+
+/* Navigation styles */
+.nav {
+  ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    display: flex;
+    ;
+  }
+
+  .nav-link1 {
+    /*contact*/
+    /* font-size: large; */
+    color: #ffffff; /* White text color */
+    text-decoration: none;
+    transition: color 0.1s; /* Smooth transition effect */
+    padding: 10px 10px 10px 10px; 
+    position: relative;
+    font-weight: bold;
+  }
+
+  .nav-link2 {
+    /* logout */
+    /* font-size: 20px; */
+    border-radius: 4px;
+    font-weight: bold;
+    background-color: rgb(255, 255, 255);
+    color: rgb(255, 38, 0); /* White text color */
+    text-decoration: none;
+    transition: color 0.1s; /* Smooth transition effect */
+    padding: 10px 10px 10px 10px;
+    position: relative;
+  }
+
+  .nav-link1:hover {
+    color: transparent; /* Orange text color on hover */
+  }
+  .nav-link2:hover {
+    background-color: transparent;
+    color: transparent; /* Orange text color on hover */
+  }
+
+  .nav-link1:hover::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url("https://i.ibb.co/jkDNGWS/phone.png") no-repeat;
+    width: 35px; /* Adjust the width of the logo */
+    height: 35px; /* Adjust the height of the logo */
+    background-size: cover;
+  }
+  .nav-link2:hover::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url("https://i.ibb.co/25tQPz8/log.png") no-repeat;
+    width: 35px; /* Adjust the width of the logo */
+    height: 35px; /* Adjust the height of the logo */
+    background-size: cover;
+  }
+
+  .nav-link3 {
+    border-radius: 10px;
+    font-weight: bold;
+    /* background-color: white; */
+    color: #ffffff; /* White text color */
+    text-decoration: none;
+    transition: color 0.1s; /* Smooth transition effect */
+    padding: 10px 10px 10px 10px;
+    position: relative;
+  }
+  
+  .nav-link3:hover {
+    color: transparent;
+  }
+  
+  .nav-link3:hover::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url("https://i.ibb.co/J504xh0/clock.png") no-repeat; /* Replace with your bookings icon URL */
+    width: 35px;
+    height: 35px;
+    background-size: cover;
+  }
+
+  .nav-link3.active{
+    color:red;
+  }
+
+  .nav-link3.active:hover{
+    color:transparent;
+    cursor: pointer;
+  }
+
+  .nav-link4.active{
+    color:red;
+  }
+
+  .nav-link4 {
+    font-weight: bold;
+    border-radius: 10px;
+    /* background-color: white; */
+    color: #ffffff; /* White text color */
+    text-decoration: none;
+    transition: color 0.1s; /* Smooth transition effect */
+    padding: 10px 10px 10px 10px;
+    position: relative;
+  }
+  
+  .nav-link4:hover {
+    color: transparent;
+  }
+  
+  .nav-link4:hover::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: url("https://i.ibb.co/xHm8K2X/home.png") no-repeat; /* Replace with your bookings icon URL */
+    width: 35px;
+    height: 35px;
+    background-size: cover;
+  }
+  
+
+}
+.tab-btn {
+  background-color: transparent;
+  border: none;
+  color: #ffffff; /* White text color */
+  cursor: pointer;
+  transition: color 0.3s; /* Smooth transition effect */
+}
+
+.tab-btn:hover {
+  color: #ff8800; /* Orange text color on hover */
+}
+
