@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon App.js",
     "dev": "nodemon App.js",
     "test": "jest",
     "migrate": "sequelize db:migrate"
