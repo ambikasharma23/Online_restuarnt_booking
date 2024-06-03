@@ -12,7 +12,7 @@ app.use(morgan('combined'));
 const endpoints = [
   { url: 'http://localhost:4000/api/rest', type: 'REST' },
   { url: 'http://localhost:4000/api/graphql', type: 'GraphQL' },
-  { url: 'http://localhost:4000/api/grpc', type: 'gRPC' }
+  { url: 'http://localhost:4000/api/grpc', type: 'gRPC' }// grpc api 
 ];
 
 const queueManager = new QueueManager();
